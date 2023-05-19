@@ -21,7 +21,7 @@ import { RouterModule } from '@angular/router';
       about {{ dog.name }}:
       {{ dog.description }}
     </p>
-    <p class="pet-learn-more"><a [routerLink]="['/details', index ]">Learn More</a></p>
+    <p class="pet-learn-more"><a target="_blank" [routerLink]="['/details', index ]">Learn More</a></p>
   </article>`,
   styles: [
     `
