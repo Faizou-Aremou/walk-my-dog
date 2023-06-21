@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Injector } from '@angular/core';
 
 export interface Dog {
   name: string;
@@ -8,12 +8,23 @@ export interface Dog {
   photoUrl: string;
   location: string;
 }
+export class Test {
+
+}
 
 @Injectable({
   providedIn: 'root',
 })
 export class DogsService {
-  constructor() {}
+  constructor(injector: Injector) {
+    console.log(
+    'parent',  injector
+    )
+
+   const childInjector = Injector.create({providers:[{provide:Test, useClass:Test}], parent:injector, name:'blablou'});
+
+   console.log('child',childInjector)
+  }
   dogs: Dog[] = [
     {
       name: 'Robbie',
