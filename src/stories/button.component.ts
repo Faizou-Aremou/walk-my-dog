@@ -1,9 +1,8 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'storybook-button',
-  imports: [CommonModule],
   template: ` <button
     type="button"
     (click)="onClick.emit($event)"

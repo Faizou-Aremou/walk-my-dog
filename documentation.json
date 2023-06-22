@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "Dog",
-            "id": "interface-Dog-0c8690807c05688083d6dec9cded2484e2b223d491a52ecafa56476f702695ca13cd71eb49d73c38ce68c81c6de656921e91d8a264cabdec517fd0f50a54511b",
+            "id": "interface-Dog-5eb4b973c2c20fd73699aa32bd7a6d61e0616bfa32e472ebc0a3e2a68deed23ee79cdcf0a7fdf61694c605a1f4d67f6322d6e5df6f44ad6eb32cc1a2bbf36a91",
             "file": "src/app/dogs.service.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\nexport interface Dog {\n  name: string;\n  ownerName: string;\n  description: string;\n  longDescription: string;\n  photoUrl: string;\n  location: string;\n}\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DogsService {\n  constructor() {}\n  dogs: Dog[] = [\n    {\n      name: 'Robbie',\n      ownerName: 'Esther Fraiser',\n      description: 'Morbi in urna in nunc hendrerit dignissim.',\n      longDescription:\n        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in quam sit amet justo laoreet facilisis non eget nulla. Cras elit mauris, tristique ac nisl in, ullamcorper tincidunt turpis. Maecenas in condimentum sapien. Proin pharetra turpis non justo varius luctus. Praesent in risus lorem. Curabitur et nibh viverra, mollis est vitae, vestibulum libero. Pellentesque vitae turpis pharetra, sollicitudin nunc quis, efficitur augue. Mauris eu sollicitudin eros, id finibus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',\n      photoUrl: '/assets/pexels-alexandru-rotariu-733416.jpg',\n      location: 'Mountain View, CA',\n    },\n    {\n      name: 'Oberon',\n      ownerName: 'Rebecca Bustoire',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'Pellentesque in sodales quam. Suspendisse metus risus, tristique eget gravida quis, condimentum id mi. Fusce magna ex, facilisis vitae tempor non, efficitur pharetra metus. Quisque et arcu sed eros posuere maximus. Curabitur iaculis varius volutpat. Pellentesque maximus, tellus id congue dictum, velit ipsum elementum lacus, quis ultrices nisl orci et tellus. Praesent semper enim eu eros consequat, vitae semper tortor maximus. Nunc eleifend interdum auctor.',\n      photoUrl: '/assets/pexels-amal-santhosh-662417.jpg',\n      location: 'Chicago, IL',\n    },\n    {\n      name: 'Rin Tin',\n      ownerName: 'Rachel Marzo',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'In sagittis iaculis tortor, sit amet hendrerit velit dapibus eu. Quisque semper a urna non egestas. Aliquam ultrices pulvinar ligula, et placerat est luctus lobortis. In venenatis neque ac tellus semper scelerisque. Praesent eu ornare felis. Proin sagittis augue eu elementum lacinia. Suspendisse eu felis pellentesque, auctor mauris nec, mattis dui. Etiam fringilla dui nec nulla scelerisque, non fringilla massa porta. Aliquam aliquet purus ligula, eu blandit dui eleifend sit amet. Nulla facilisi. In vel ornare elit, ut tempor nulla.',\n      photoUrl: '/assets/pexels-charles-1851164.jpg',\n      location: 'Boston, MA',\n    },\n    {\n      name: 'Lasser',\n      ownerName: 'Lashawn Pierre',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-gilberto-reyes-825947.jpg',\n      location: 'Las Vegas, NV',\n    },\n    {\n      name: 'Capo',\n      ownerName: 'Tosin Leaders',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-pixabay-220938.jpg',\n      location: 'Reno, NV',\n    },\n    {\n      name: 'Party',\n      ownerName: 'Harold Bria',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-steshka-willems-1390361.jpg',\n      location: 'Detroit, MI',\n    },\n  ];\n}\n",
+            "sourceCode": "import { Injectable, Injector } from '@angular/core';\n\nexport interface Dog {\n  name: string;\n  ownerName: string;\n  description: string;\n  longDescription: string;\n  photoUrl: string;\n  location: string;\n}\nexport class Test {\n\n}\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DogsService {\n  constructor(injector: Injector) {\n    console.log(\n    'parent',  injector\n    )\n\n   const childInjector = Injector.create({providers:[{provide:Test, useClass:Test}], parent:injector, name:'blablou'});\n\n   console.log('child',childInjector)\n  }\n  dogs: Dog[] = [\n    {\n      name: 'Robbie',\n      ownerName: 'Esther Fraiser',\n      description: 'Morbi in urna in nunc hendrerit dignissim.',\n      longDescription:\n        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in quam sit amet justo laoreet facilisis non eget nulla. Cras elit mauris, tristique ac nisl in, ullamcorper tincidunt turpis. Maecenas in condimentum sapien. Proin pharetra turpis non justo varius luctus. Praesent in risus lorem. Curabitur et nibh viverra, mollis est vitae, vestibulum libero. Pellentesque vitae turpis pharetra, sollicitudin nunc quis, efficitur augue. Mauris eu sollicitudin eros, id finibus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',\n      photoUrl: '/assets/pexels-alexandru-rotariu-733416.jpg',\n      location: 'Mountain View, CA',\n    },\n    {\n      name: 'Oberon',\n      ownerName: 'Rebecca Bustoire',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'Pellentesque in sodales quam. Suspendisse metus risus, tristique eget gravida quis, condimentum id mi. Fusce magna ex, facilisis vitae tempor non, efficitur pharetra metus. Quisque et arcu sed eros posuere maximus. Curabitur iaculis varius volutpat. Pellentesque maximus, tellus id congue dictum, velit ipsum elementum lacus, quis ultrices nisl orci et tellus. Praesent semper enim eu eros consequat, vitae semper tortor maximus. Nunc eleifend interdum auctor.',\n      photoUrl: '/assets/pexels-amal-santhosh-662417.jpg',\n      location: 'Chicago, IL',\n    },\n    {\n      name: 'Rin Tin',\n      ownerName: 'Rachel Marzo',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'In sagittis iaculis tortor, sit amet hendrerit velit dapibus eu. Quisque semper a urna non egestas. Aliquam ultrices pulvinar ligula, et placerat est luctus lobortis. In venenatis neque ac tellus semper scelerisque. Praesent eu ornare felis. Proin sagittis augue eu elementum lacinia. Suspendisse eu felis pellentesque, auctor mauris nec, mattis dui. Etiam fringilla dui nec nulla scelerisque, non fringilla massa porta. Aliquam aliquet purus ligula, eu blandit dui eleifend sit amet. Nulla facilisi. In vel ornare elit, ut tempor nulla.',\n      photoUrl: '/assets/pexels-charles-1851164.jpg',\n      location: 'Boston, MA',\n    },\n    {\n      name: 'Lasser',\n      ownerName: 'Lashawn Pierre',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-gilberto-reyes-825947.jpg',\n      location: 'Las Vegas, NV',\n    },\n    {\n      name: 'Capo',\n      ownerName: 'Tosin Leaders',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-pixabay-220938.jpg',\n      location: 'Reno, NV',\n    },\n    {\n      name: 'Party',\n      ownerName: 'Harold Bria',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-steshka-willems-1390361.jpg',\n      location: 'Detroit, MI',\n    },\n  ];\n}\n",
             "properties": [
                 {
                     "name": "description",
@@ -71,21 +71,32 @@
         },
         {
             "name": "User",
-            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "id": "interface-User-1f200b621ef623f5be215ab4b7f1826d4f8cad4d1324e54b6e5ec882df7a82c21fcbc9ba1763b763a5a37b5fe3948fa748602d50db4459cf74759586fe43c1b3",
             "file": "src/stories/User.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface User {}\n",
-            "properties": [],
+            "sourceCode": "export interface User {\n  name:string\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
             "indexSignatures": [],
+            "kind": 168,
             "methods": []
         }
     ],
     "injectables": [
         {
             "name": "DogsService",
-            "id": "injectable-DogsService-0c8690807c05688083d6dec9cded2484e2b223d491a52ecafa56476f702695ca13cd71eb49d73c38ce68c81c6de656921e91d8a264cabdec517fd0f50a54511b",
+            "id": "injectable-DogsService-5eb4b973c2c20fd73699aa32bd7a6d61e0616bfa32e472ebc0a3e2a68deed23ee79cdcf0a7fdf61694c605a1f4d67f6322d6e5df6f44ad6eb32cc1a2bbf36a91",
             "file": "src/app/dogs.service.ts",
             "properties": [
                 {
@@ -96,7 +107,7 @@
                     "type": "Dog[]",
                     "optional": false,
                     "description": "",
-                    "line": 17
+                    "line": 28
                 }
             ],
             "methods": [],
@@ -104,21 +115,56 @@
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\nexport interface Dog {\n  name: string;\n  ownerName: string;\n  description: string;\n  longDescription: string;\n  photoUrl: string;\n  location: string;\n}\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DogsService {\n  constructor() {}\n  dogs: Dog[] = [\n    {\n      name: 'Robbie',\n      ownerName: 'Esther Fraiser',\n      description: 'Morbi in urna in nunc hendrerit dignissim.',\n      longDescription:\n        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in quam sit amet justo laoreet facilisis non eget nulla. Cras elit mauris, tristique ac nisl in, ullamcorper tincidunt turpis. Maecenas in condimentum sapien. Proin pharetra turpis non justo varius luctus. Praesent in risus lorem. Curabitur et nibh viverra, mollis est vitae, vestibulum libero. Pellentesque vitae turpis pharetra, sollicitudin nunc quis, efficitur augue. Mauris eu sollicitudin eros, id finibus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',\n      photoUrl: '/assets/pexels-alexandru-rotariu-733416.jpg',\n      location: 'Mountain View, CA',\n    },\n    {\n      name: 'Oberon',\n      ownerName: 'Rebecca Bustoire',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'Pellentesque in sodales quam. Suspendisse metus risus, tristique eget gravida quis, condimentum id mi. Fusce magna ex, facilisis vitae tempor non, efficitur pharetra metus. Quisque et arcu sed eros posuere maximus. Curabitur iaculis varius volutpat. Pellentesque maximus, tellus id congue dictum, velit ipsum elementum lacus, quis ultrices nisl orci et tellus. Praesent semper enim eu eros consequat, vitae semper tortor maximus. Nunc eleifend interdum auctor.',\n      photoUrl: '/assets/pexels-amal-santhosh-662417.jpg',\n      location: 'Chicago, IL',\n    },\n    {\n      name: 'Rin Tin',\n      ownerName: 'Rachel Marzo',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'In sagittis iaculis tortor, sit amet hendrerit velit dapibus eu. Quisque semper a urna non egestas. Aliquam ultrices pulvinar ligula, et placerat est luctus lobortis. In venenatis neque ac tellus semper scelerisque. Praesent eu ornare felis. Proin sagittis augue eu elementum lacinia. Suspendisse eu felis pellentesque, auctor mauris nec, mattis dui. Etiam fringilla dui nec nulla scelerisque, non fringilla massa porta. Aliquam aliquet purus ligula, eu blandit dui eleifend sit amet. Nulla facilisi. In vel ornare elit, ut tempor nulla.',\n      photoUrl: '/assets/pexels-charles-1851164.jpg',\n      location: 'Boston, MA',\n    },\n    {\n      name: 'Lasser',\n      ownerName: 'Lashawn Pierre',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-gilberto-reyes-825947.jpg',\n      location: 'Las Vegas, NV',\n    },\n    {\n      name: 'Capo',\n      ownerName: 'Tosin Leaders',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-pixabay-220938.jpg',\n      location: 'Reno, NV',\n    },\n    {\n      name: 'Party',\n      ownerName: 'Harold Bria',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-steshka-willems-1390361.jpg',\n      location: 'Detroit, MI',\n    },\n  ];\n}\n",
+            "sourceCode": "import { Injectable, Injector } from '@angular/core';\n\nexport interface Dog {\n  name: string;\n  ownerName: string;\n  description: string;\n  longDescription: string;\n  photoUrl: string;\n  location: string;\n}\nexport class Test {\n\n}\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DogsService {\n  constructor(injector: Injector) {\n    console.log(\n    'parent',  injector\n    )\n\n   const childInjector = Injector.create({providers:[{provide:Test, useClass:Test}], parent:injector, name:'blablou'});\n\n   console.log('child',childInjector)\n  }\n  dogs: Dog[] = [\n    {\n      name: 'Robbie',\n      ownerName: 'Esther Fraiser',\n      description: 'Morbi in urna in nunc hendrerit dignissim.',\n      longDescription:\n        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in quam sit amet justo laoreet facilisis non eget nulla. Cras elit mauris, tristique ac nisl in, ullamcorper tincidunt turpis. Maecenas in condimentum sapien. Proin pharetra turpis non justo varius luctus. Praesent in risus lorem. Curabitur et nibh viverra, mollis est vitae, vestibulum libero. Pellentesque vitae turpis pharetra, sollicitudin nunc quis, efficitur augue. Mauris eu sollicitudin eros, id finibus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',\n      photoUrl: '/assets/pexels-alexandru-rotariu-733416.jpg',\n      location: 'Mountain View, CA',\n    },\n    {\n      name: 'Oberon',\n      ownerName: 'Rebecca Bustoire',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'Pellentesque in sodales quam. Suspendisse metus risus, tristique eget gravida quis, condimentum id mi. Fusce magna ex, facilisis vitae tempor non, efficitur pharetra metus. Quisque et arcu sed eros posuere maximus. Curabitur iaculis varius volutpat. Pellentesque maximus, tellus id congue dictum, velit ipsum elementum lacus, quis ultrices nisl orci et tellus. Praesent semper enim eu eros consequat, vitae semper tortor maximus. Nunc eleifend interdum auctor.',\n      photoUrl: '/assets/pexels-amal-santhosh-662417.jpg',\n      location: 'Chicago, IL',\n    },\n    {\n      name: 'Rin Tin',\n      ownerName: 'Rachel Marzo',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'In sagittis iaculis tortor, sit amet hendrerit velit dapibus eu. Quisque semper a urna non egestas. Aliquam ultrices pulvinar ligula, et placerat est luctus lobortis. In venenatis neque ac tellus semper scelerisque. Praesent eu ornare felis. Proin sagittis augue eu elementum lacinia. Suspendisse eu felis pellentesque, auctor mauris nec, mattis dui. Etiam fringilla dui nec nulla scelerisque, non fringilla massa porta. Aliquam aliquet purus ligula, eu blandit dui eleifend sit amet. Nulla facilisi. In vel ornare elit, ut tempor nulla.',\n      photoUrl: '/assets/pexels-charles-1851164.jpg',\n      location: 'Boston, MA',\n    },\n    {\n      name: 'Lasser',\n      ownerName: 'Lashawn Pierre',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-gilberto-reyes-825947.jpg',\n      location: 'Las Vegas, NV',\n    },\n    {\n      name: 'Capo',\n      ownerName: 'Tosin Leaders',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-pixabay-220938.jpg',\n      location: 'Reno, NV',\n    },\n    {\n      name: 'Party',\n      ownerName: 'Harold Bria',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-steshka-willems-1390361.jpg',\n      location: 'Detroit, MI',\n    },\n  ];\n}\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "args": [],
-                "line": 15
+                "args": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 18,
+                "jsdoctags": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
             },
             "type": "injectable"
         }
     ],
     "guards": [],
     "interceptors": [],
-    "classes": [],
+    "classes": [
+        {
+            "name": "Test",
+            "id": "class-Test-5eb4b973c2c20fd73699aa32bd7a6d61e0616bfa32e472ebc0a3e2a68deed23ee79cdcf0a7fdf61694c605a1f4d67f6322d6e5df6f44ad6eb32cc1a2bbf36a91",
+            "file": "src/app/dogs.service.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable, Injector } from '@angular/core';\n\nexport interface Dog {\n  name: string;\n  ownerName: string;\n  description: string;\n  longDescription: string;\n  photoUrl: string;\n  location: string;\n}\nexport class Test {\n\n}\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DogsService {\n  constructor(injector: Injector) {\n    console.log(\n    'parent',  injector\n    )\n\n   const childInjector = Injector.create({providers:[{provide:Test, useClass:Test}], parent:injector, name:'blablou'});\n\n   console.log('child',childInjector)\n  }\n  dogs: Dog[] = [\n    {\n      name: 'Robbie',\n      ownerName: 'Esther Fraiser',\n      description: 'Morbi in urna in nunc hendrerit dignissim.',\n      longDescription:\n        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in quam sit amet justo laoreet facilisis non eget nulla. Cras elit mauris, tristique ac nisl in, ullamcorper tincidunt turpis. Maecenas in condimentum sapien. Proin pharetra turpis non justo varius luctus. Praesent in risus lorem. Curabitur et nibh viverra, mollis est vitae, vestibulum libero. Pellentesque vitae turpis pharetra, sollicitudin nunc quis, efficitur augue. Mauris eu sollicitudin eros, id finibus quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',\n      photoUrl: '/assets/pexels-alexandru-rotariu-733416.jpg',\n      location: 'Mountain View, CA',\n    },\n    {\n      name: 'Oberon',\n      ownerName: 'Rebecca Bustoire',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'Pellentesque in sodales quam. Suspendisse metus risus, tristique eget gravida quis, condimentum id mi. Fusce magna ex, facilisis vitae tempor non, efficitur pharetra metus. Quisque et arcu sed eros posuere maximus. Curabitur iaculis varius volutpat. Pellentesque maximus, tellus id congue dictum, velit ipsum elementum lacus, quis ultrices nisl orci et tellus. Praesent semper enim eu eros consequat, vitae semper tortor maximus. Nunc eleifend interdum auctor.',\n      photoUrl: '/assets/pexels-amal-santhosh-662417.jpg',\n      location: 'Chicago, IL',\n    },\n    {\n      name: 'Rin Tin',\n      ownerName: 'Rachel Marzo',\n      description:\n        'Vestibulum venenatis arcu sit amet ligula lobortis volutpat.',\n      longDescription:\n        'In sagittis iaculis tortor, sit amet hendrerit velit dapibus eu. Quisque semper a urna non egestas. Aliquam ultrices pulvinar ligula, et placerat est luctus lobortis. In venenatis neque ac tellus semper scelerisque. Praesent eu ornare felis. Proin sagittis augue eu elementum lacinia. Suspendisse eu felis pellentesque, auctor mauris nec, mattis dui. Etiam fringilla dui nec nulla scelerisque, non fringilla massa porta. Aliquam aliquet purus ligula, eu blandit dui eleifend sit amet. Nulla facilisi. In vel ornare elit, ut tempor nulla.',\n      photoUrl: '/assets/pexels-charles-1851164.jpg',\n      location: 'Boston, MA',\n    },\n    {\n      name: 'Lasser',\n      ownerName: 'Lashawn Pierre',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-gilberto-reyes-825947.jpg',\n      location: 'Las Vegas, NV',\n    },\n    {\n      name: 'Capo',\n      ownerName: 'Tosin Leaders',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-pixabay-220938.jpg',\n      location: 'Reno, NV',\n    },\n    {\n      name: 'Party',\n      ownerName: 'Harold Bria',\n      description: 'In quis nisl ac sem hendrerit hendrerit.',\n      longDescription:\n        'Quisque consequat vulputate arcu vel lobortis. Maecenas non tristique sapien. Duis tincidunt pretium quam eu ultrices. Nam eget nisi dignissim, vulputate lacus sed, faucibus elit. Fusce eget vulputate lacus. Quisque sed nisi id massa vestibulum eleifend eu id sapien. Phasellus venenatis, leo eu vehicula sagittis, ligula mi ultricies enim, a elementum enim enim vitae lorem. Nam sit amet turpis sem. Integer augue mi, hendrerit sit amet molestie et, varius eu dolor. Vivamus in iaculis tellus, nec hendrerit quam. Nulla vitae sapien risus. Curabitur semper, turpis sit amet venenatis tristique, urna tellus efficitur ipsum, a scelerisque sem purus ut velit. Phasellus faucibus blandit enim vitae consequat.',\n      photoUrl: '/assets/pexels-steshka-willems-1390361.jpg',\n      location: 'Detroit, MI',\n    },\n  ];\n}\n",
+            "properties": [],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
     "directives": [],
     "components": [
         {
@@ -170,7 +216,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-a53fd738b978780d39fb5fcc9ae4cfe0088e57a1f6ce674862d57dab9192140bd1c05548a9910db0469a431142886e658ff2e761f15781b2ad430e58d64724d0",
+            "id": "component-ButtonComponent-48c32f1f637d6a2ad427fd2c333c81720a270563597776f184efff89cad10a03d3924998ed955745c34378ef8d3deded462a9a6105030bb864267a039d6916de",
             "file": "src/stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -193,7 +239,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nWhat background color to use\n",
                     "description": "<p>What background color to use</p>\n",
-                    "line": 28,
+                    "line": 29,
                     "type": "string",
                     "decorators": []
                 },
@@ -204,15 +250,15 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 786,
-                            "end": 799,
+                            "pos": 805,
+                            "end": 818,
                             "flags": 8421376,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "kind": 330,
                             "tagName": {
-                                "pos": 787,
-                                "end": 795,
+                                "pos": 806,
+                                "end": 814,
                                 "flags": 8421376,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -224,7 +270,7 @@
                     ],
                     "rawdescription": "\n\nButton contents\n\n",
                     "description": "<p>Button contents</p>\n",
-                    "line": 42,
+                    "line": 43,
                     "type": "string",
                     "decorators": []
                 },
@@ -235,7 +281,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nIs this the principal call to action on the page?\n",
                     "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 22,
+                    "line": 23,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -246,7 +292,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nHow large should the button be?\n",
                     "description": "<p>How large should the button be?</p>\n",
-                    "line": 34,
+                    "line": 35,
                     "type": "\"small\" | \"medium\" | \"large\"",
                     "decorators": []
                 }
@@ -259,7 +305,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nOptional click handler\n",
                     "description": "<p>Optional click handler</p>\n",
-                    "line": 48,
+                    "line": 49,
                     "type": "EventEmitter"
                 }
             ],
@@ -269,7 +315,7 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
-            "standalone": false,
+            "standalone": true,
             "imports": [
                 {
                     "name": "CommonModule",
@@ -279,7 +325,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone:true,\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -295,7 +341,7 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 50
+                        "line": 51
                     }
                 }
             }
@@ -547,7 +593,7 @@
         },
         {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-3d494fd89671305c6be07de00e019efdf08f2e36c2169e5fb75a5acdb2841da927e3ef3cbd21cc18f478373a784b1fb90e8b63b9df4b3498a75b652bd9c37b38",
+            "id": "component-HeaderComponent-306b80fde951047cd93f73e591d8f10e4a0e2ee21d1a6250455559682371da5f681da87699b300e4ad9d11f3d4a1d0ae2ba299170817876c47641b730954d6fd",
             "file": "src/stories/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -559,7 +605,7 @@
                 "./header.css"
             ],
             "styles": [],
-            "template": "<header>    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "template": "<header>    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            [primary]=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -569,7 +615,7 @@
                     "defaultValue": "null",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 65,
+                    "line": 68,
                     "type": "User | null",
                     "decorators": []
                 }
@@ -580,7 +626,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 74,
+                    "line": 77,
                     "type": "EventEmitter"
                 },
                 {
@@ -588,7 +634,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 68,
+                    "line": 71,
                     "type": "EventEmitter"
                 },
                 {
@@ -596,7 +642,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 71,
+                    "line": 74,
                     "type": "EventEmitter"
                 }
             ],
@@ -606,12 +652,21 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
-            "standalone": false,
-            "imports": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\nimport ButtonComponent from './button.component';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  standalone:true,\n  imports: [CommonModule, ButtonComponent],\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            [primary]=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1206,6 +1261,15 @@
             },
             {
                 "filePath": "src/app/dogs.service.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "Test",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/dogs.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
                 "name": "DogsService",
@@ -1338,7 +1402,7 @@
                 "linktype": "interface",
                 "name": "User",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
